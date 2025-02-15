@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
+
 * {
     margin: 0;
     padding: 0;
@@ -29,14 +30,14 @@ section{
     padding: 10rem 9% 2rem;
 }
 
-.home{
+.home {
     display: flex;
     align-items: center;
     padding: 0 1%;
     font-size: 14px;
 }
 
-.home-content{
+.home-content {
     max-width: 60rem;
     padding: 0 5%;
 }
@@ -53,6 +54,7 @@ section{
 .home-content .text-animate {
     position: relative;
     width: 32.8rem;
+    margin-bottom: 5px;
 }
 
 .home-content .text-animate h3 {
@@ -68,7 +70,8 @@ section{
     backdrop-filter: blur(20px);
     padding: 10px 15px;
     border-radius: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    margin-top: 2px;
 }
 
 .home-content .btn-box {
@@ -271,6 +274,7 @@ body {
     width: 170px;
     display: flex;
     justify-content: space-between;
+    margin-left: 25px;
 }
 
 .home-sci a {
@@ -287,6 +291,7 @@ body {
     color: var(--text-color);
     z-index: 1;
     overflow: hidden;
+    transition: .5s;
 }
 
 .home-sci a::before {
@@ -298,7 +303,6 @@ body {
     height: 100%;
     background: var(--border-color);
     z-index: -1;
-    transition: .5s;
 }
 
 .home-sci a:hover::before {
