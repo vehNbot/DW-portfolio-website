@@ -12,6 +12,9 @@
     font-family: "Poppins", sans-serif;
 }
 
+.allpagecontent {
+    max-height: 100vh;
+}
 
 :root{
     --bg-color: #081b29;
@@ -29,6 +32,7 @@ section{
 .home-screen {
     background: var(--bg-color);
     background: url('Assets/damo-2.jpg');
+    box-shadow: inset 0 -10px 6px black;
 }
 
 .home {
@@ -107,12 +111,12 @@ section{
     width: 0;
     height: 100%;
     background: var(--border-color);
-    z-index: -1;
     transition: .5s;
 }
 
 .btn-box .btn:hover::before{
     width: 100%;
+    
 }
 
 .header {
@@ -308,20 +312,42 @@ body {
 }
 
 .portfolio {
-    display: flex;
-    align-items: top;
-    padding: 5% 0;
     font-size: 14px;
     background: var(--bg-color);
-    background: url('Assets/damo-1.jpg');
+    background: url('Assets/damo-1.jpg') no-repeat;
+    box-shadow: inset 0 0 6px 8px black;
+    max-height: 100vh;
 }
 
-.portfolio h2 {
+.portfolio .portfolio-header {
     font-size: 36px;
-    padding: 0 5%;
     max-width: 100%;
 }
 
-.allpagecontent {
-    max-height: 100vh;
+.portfolio .media-container {
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+}
+
+.portfolio .portfolio-media {
+    width: auto;
+    height: auto;
+    background: rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(20px);
+    color: #fff;
+    margin-top: 5em;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio .portfolio-media video{
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.1rem;
 }
